@@ -10,10 +10,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'E-Commerce App',
+          'E-Commerce ',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.deepPurple,
+        automaticallyImplyLeading: false,
         actions: [
           IconButton(
             icon: Icon(Icons.shopping_cart, color: Colors.white),

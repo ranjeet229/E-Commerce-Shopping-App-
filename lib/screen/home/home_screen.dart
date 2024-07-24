@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:voice/screen/home/homePage.dart';
 import '../../constants.dart';
 import '../../modals/product.dart';
 import '../details/details_screen.dart';
@@ -15,7 +16,11 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           icon: SvgPicture.asset("assets/icons/back.svg"),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context)=>HomePage() ));
+          },
         ),
         actions: <Widget>[
           IconButton(
