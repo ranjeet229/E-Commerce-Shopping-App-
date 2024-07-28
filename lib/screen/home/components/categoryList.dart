@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:voice/modals/product.dart';
 import 'package:voice/screen/HomeCategory/component/MensSection.dart';
 import 'package:voice/screen/home/home_screen.dart';
 
@@ -101,6 +102,7 @@ class CategoryList extends StatelessWidget {
     );
   }
 }
+
 
 
 
