@@ -1,6 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../content_details/jacketScreen.dart';
+import '../content_details/pantsScreen.dart';
+import '../content_details/shirtsScreen.dart';
+import '../content_details/shoesScreen.dart';
+import '../content_details/watchScreen.dart';
+
 class CategoryItem extends StatelessWidget {
   final String id;
   final String title;
@@ -84,94 +90,6 @@ class CategoryItem extends StatelessWidget {
   }
 }
 
-class JacketsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text('Jackets'),
-      ),
-      body: Center(
-        child: Text(
-          'Jackets Section',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
 
-class ShoesScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text('Shoes'),
-      ),
-      body: Center(
-        child: Text(
-          'Shoes Section',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
 
-class ShirtsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text('Shirts'),
-      ),
-      body: Center(
-        child: Text(
-          'Shirts Section',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
 
-class PantsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text('Pants'),
-      ),
-      body: Center(
-        child: Text(
-          'Pants Section',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
-
-class WatchesScreen extends StatelessWidget {
-  const WatchesScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text("Watches"),
-      ),
-      body: Center(
-        child: Text(
-          'Watch section',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}
