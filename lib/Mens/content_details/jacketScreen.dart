@@ -7,12 +7,18 @@ class JacketsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black.withOpacity(0.7),
-        title: Text('Jackets'),
+        title: Text('Jackets',style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500,
+        color: Colors.blue),),
       ),
       body: Center(
-        child: Text(
-          'Jackets Section',
-          style: TextStyle(fontSize: 24),
+        child: Row(
+          children: [
+            Text(
+              'Jackets Section',
+              style: TextStyle(fontSize: 24),
+            ),
+
+          ],
         ),
       ),
     );
